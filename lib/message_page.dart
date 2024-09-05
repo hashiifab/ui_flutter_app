@@ -6,18 +6,18 @@ class MessagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Halaman Pesan")),
+      appBar: AppBar(title: const Text("Message")),
       body: const Column(
         children: [
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
-            title: Text("Profil 1"),
-            subtitle: Text("Pesan dari Profil 1..."),
+            title: Text("Profile 1"),
+            subtitle: Text("message from Profile 1..."),
           ),
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
-            title: Text("Profil 2"),
-            subtitle: Text("Pesan dari Profil 2..."),
+            title: Text("Profile 2"),
+            subtitle: Text("message from Profile 2..."),
           ),
         ],
       ),

@@ -16,7 +16,7 @@ class OnboardingPage3 extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              width: double.infinity, // Ensure full width
+              width: double.infinity, 
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -33,8 +33,8 @@ class OnboardingPage3 extends StatelessWidget {
                 ],
               ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch, // Ensure children stretch horizontally
-                mainAxisAlignment: MainAxisAlignment.center, // Center the content vertically
+                crossAxisAlignment: CrossAxisAlignment.stretch, 
+                mainAxisAlignment: MainAxisAlignment.center, 
                 children: [
                   const Text(
                     'Ayo Mulai!',
@@ -46,23 +46,23 @@ class OnboardingPage3 extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'Jelajahi produk dan mulai belanja sekarang!',
+                    'Explore Our Products',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),
-                  const SizedBox(height: 20), // Space before buttons
+                  const SizedBox(height: 20), 
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/product');
                     },
-                    child: const Text('Ke Halaman Produk'),
+                    child: const Text('Product Page'),
                   ),
-                  const SizedBox(height: 10), // Space between buttons
+                  const SizedBox(height: 10), 
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/message');
                     },
-                    child: const Text('Ke Halaman Pesan'),
+                    child: const Text('Message Page'),
                   ),
                 ],
               ),

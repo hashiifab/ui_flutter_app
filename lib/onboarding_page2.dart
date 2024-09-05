@@ -33,11 +33,11 @@ class OnboardingPage2 extends StatelessWidget {
                 ],
               ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch, // Ensure children stretch horizontally
-                mainAxisAlignment: MainAxisAlignment.center, // Center the content vertically
+                crossAxisAlignment: CrossAxisAlignment.stretch, 
+                mainAxisAlignment: MainAxisAlignment.center, 
                 children: [
                   const Text(
-                    'Belanja Mudah!',
+                    'Shopping Efficiency',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -46,16 +46,16 @@ class OnboardingPage2 extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'Nikmati pengalaman belanja cepat dan aman.',
+                    'Enjoy the efficiency of your shopping experience with our app.',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),
-                  const SizedBox(height: 20), // Space before the button
+                  const SizedBox(height: 20), 
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/onboarding3');
                     },
-                    child: const Text('Lanjutkan'),
+                    child: const Text('Next'),
                   ),
                 ],
               ),

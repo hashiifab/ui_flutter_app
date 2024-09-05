@@ -7,14 +7,14 @@ class ProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // Daftar produk beserta gambar dan detail lainnya
     List<Map<String, String>> products = [
-      {"name": "Sepatu 1", "desc": "Deskripsi Sepatu 1", "like": "120", "image": "assets/images/shoes-1.jpg"},
-      {"name": "Sepatu 2", "desc": "Deskripsi Sepatu 2", "like": "95", "image": "assets/images/shoes-2.jpg"},
-      {"name": "Sepatu 3", "desc": "Deskripsi Sepatu 3", "like": "140", "image": "assets/images/shoes-3.jpg"},
-      {"name": "Sepatu 4", "desc": "Deskripsi Sepatu 4", "like": "85", "image": "assets/images/shoes-4.jpg"},
+      {"name": "Shoe 1", "desc": "Deskripsi Sepatu 1", "like": "120", "image": "assets/images/shoes-1.jpg"},
+      {"name": "Shoe 2", "desc": "Deskripsi Sepatu 2", "like": "95", "image": "assets/images/shoes-2.jpg"},
+      {"name": "Shoe 3", "desc": "Deskripsi Sepatu 3", "like": "140", "image": "assets/images/shoes-3.jpg"},
+      {"name": "Shoe 4", "desc": "Deskripsi Sepatu 4", "like": "85", "image": "assets/images/shoes-4.jpg"},
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Halaman Produk")),
+      appBar: AppBar(title: const Text("Products")),
       body: GridView.builder(
         padding: const EdgeInsets.all(10),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -38,7 +38,7 @@ class ProductPage extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
                     child: Image.asset(
-                      products[index]['image']!, // Menampilkan gambar sepatu
+                      products[index]['image']!, 
                       fit: BoxFit.cover,
                     ),
                   ),
