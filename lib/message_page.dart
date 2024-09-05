@@ -11,13 +11,33 @@ class MessagePage extends StatelessWidget {
         children: [
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
-            title: Text("Profile 1"),
-            subtitle: Text("message from Profile 1..."),
+            title: Text("Joni"),
+            subtitle: Text("Yeyyyyyyyyyyyyy..."),
           ),
           ListTile(
             leading: CircleAvatar(child: Icon(Icons.person)),
-            title: Text("Profile 2"),
-            subtitle: Text("message from Profile 2..."),
+            title: Text("Aga"),
+            subtitle: Text("pleaseeeeeee..."),
+          ),
+          ListTile(
+            leading: CircleAvatar(child: Icon(Icons.person)),
+            title: Text("Joni"),
+            subtitle: Text("Yeyyyyyyyyyyyyy..."),
+          ),
+          ListTile(
+            leading: CircleAvatar(child: Icon(Icons.person)),
+            title: Text("Aga"),
+            subtitle: Text("pleaseeeeeee..."),
+          ),
+          ListTile(
+            leading: CircleAvatar(child: Icon(Icons.person)),
+            title: Text("Joni"),
+            subtitle: Text("Yeyyyyyyyyyyyyy..."),
+          ),
+          ListTile(
+            leading: CircleAvatar(child: Icon(Icons.person)),
+            title: Text("Aga"),
+            subtitle: Text("pleaseeeeeee..."),
           ),
         ],
       ),
