@@ -36,10 +36,9 @@ class OnboardingPage3 extends StatelessWidget {
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
-                    mainAxisAlignment:
-                        MainAxisAlignment.start, // Align items to start
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 130), // Adjust spacing from image
+                      const SizedBox(height: 130),
                       const Text(
                         "Let's Get Started",
                         style: TextStyle(
@@ -55,10 +54,8 @@ class OnboardingPage3 extends StatelessWidget {
                         style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                       ),
                       const SizedBox(height: 20),
-                      // Buttons
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment
-                            .spaceEvenly, // Adjust button spacing
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       ),
                     ],
                   ),
@@ -67,7 +64,7 @@ class OnboardingPage3 extends StatelessWidget {
             ],
           ),
           Positioned(
-            top: 320, // Adjusted for positioning of indicators
+            top: 320,
             left: 20,
             right: 20,
             child: Row(
@@ -78,9 +75,7 @@ class OnboardingPage3 extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: index == 2
-                        ? Colors.blue
-                        : Colors.grey, // Page 3 indicator
+                    color: index == 2 ? Colors.blue : Colors.grey,
                     shape: BoxShape.circle,
                   ),
                 );
@@ -92,8 +87,7 @@ class OnboardingPage3 extends StatelessWidget {
             left: 40,
             right: 40,
             child: Row(
-              mainAxisAlignment:
-                  MainAxisAlignment.spaceBetween, // Pusatkan tombol
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton(
                   onPressed: () {
@@ -103,8 +97,7 @@ class OnboardingPage3 extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context,
-                        '/product'); // Adjusted navigation for final page
+                    Navigator.pushNamed(context, '/product');
                   },
                   child: const Text('Get Started'),
                 ),

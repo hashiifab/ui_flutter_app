@@ -36,9 +36,9 @@ class OnboardingPage2 extends StatelessWidget {
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
-                    mainAxisAlignment: MainAxisAlignment.start, // Align items to start
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 130), // Spacing from image to text
+                      const SizedBox(height: 130),
                       const Text(
                         'Exclusive Collections',
                         style: TextStyle(
@@ -61,7 +61,7 @@ class OnboardingPage2 extends StatelessWidget {
             ],
           ),
           Positioned(
-            top: 320, // Adjusted for better positioning of indicators
+            top: 320,
             left: 20,
             right: 20,
             child: Row(
@@ -72,7 +72,7 @@ class OnboardingPage2 extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: index == 1 ? Colors.blue : Colors.grey, // Page 2 indicator
+                    color: index == 1 ? Colors.blue : Colors.grey,
                     shape: BoxShape.circle,
                   ),
                 );
@@ -80,7 +80,7 @@ class OnboardingPage2 extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 50, // Adjust for bottom buttons
+            bottom: 50,
             left: 40,
             right: 40,
             child: Row(

@@ -26,56 +26,64 @@ class ProductPage extends StatelessWidget {
         name: "Response Runner Shoes",
         price: "850.000",
         imageUrl: "assets/images/shoes-1.jpg",
-        desc: "Cushy comfort for easy laps or pushing for a personal record. Features full-length EVA midsole and grippy outsole.",
+        desc:
+            "Cushy comfort for easy laps or pushing for a personal record. Features full-length EVA midsole and grippy outsole.",
         likeCount: "120",
       ),
       Product(
         name: "Sleek Runner Shoes",
         price: "900.000",
         imageUrl: "assets/images/shoes-2.jpg",
-        desc: "Blends style with comfort for versatile wear. Ideal for both running and casual outings.",
+        desc:
+            "Blends style with comfort for versatile wear. Ideal for both running and casual outings.",
         likeCount: "95",
       ),
       Product(
         name: "Trail Running Shoes",
         price: "3.300.000",
         imageUrl: "assets/images/shoes-3.jpg",
-        desc: "Designed for ultra trail distances with integrated Energy Rods and LIGHTSTRIKE PRO cushioning for responsive feel.",
+        desc:
+            "Designed for ultra trail distances with integrated Energy Rods and LIGHTSTRIKE PRO cushioning for responsive feel.",
         likeCount: "140",
       ),
       Product(
         name: "Galaxy 7 Running Shoes",
         price: "850.000",
         imageUrl: "assets/images/shoes-4.jpg",
-        desc: "Cushions your stride with Cloudfoam midsole. Durable upper for supportive feel during long runs.",
+        desc:
+            "Cushions your stride with Cloudfoam midsole. Durable upper for supportive feel during long runs.",
         likeCount: "85",
       ),
       Product(
         name: "Urban Explorer Shoes",
         price: "1.200.000",
         imageUrl: "assets/images/shoes-1.jpg",
-        desc: "Stylish and durable shoes designed for urban adventures. Offers comfort and support for everyday use.",
+        desc:
+            "Stylish and durable shoes designed for urban adventures. Offers comfort and support for everyday use.",
         likeCount: "110",
       ),
       Product(
         name: "City Runner Shoes",
         price: "950.000",
         imageUrl: "assets/images/shoes-2.jpg",
-        desc: "Combines contemporary design with advanced cushioning technology. Perfect for city runs and casual wear.",
+        desc:
+            "Combines contemporary design with advanced cushioning technology. Perfect for city runs and casual wear.",
         likeCount: "100",
       ),
       Product(
         name: "Adventure Trail Shoes",
         price: "3.500.000",
         imageUrl: "assets/images/shoes-3.jpg",
-        desc: "Built for rugged terrain with enhanced grip and protection. Ideal for challenging trails and outdoor activities.",
+        desc:
+            "Built for rugged terrain with enhanced grip and protection. Ideal for challenging trails and outdoor activities.",
         likeCount: "130",
       ),
       Product(
         name: "Cloud Runner Shoes",
         price: "900.000",
         imageUrl: "assets/images/shoes-4.jpg",
-        desc: "Features Cloudfoam cushioning for a smooth ride. Designed for both comfort and performance during runs.",
+        desc:
+            "Features Cloudfoam cushioning for a smooth ride. Designed for both comfort and performance during runs.",
         likeCount: "90",
       ),
     ];
@@ -148,9 +156,10 @@ class ProductItem extends StatelessWidget {
         children: [
           Expanded(
             child: ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(15)),
               child: Container(
-                margin: const EdgeInsets.only(bottom: 1), // Adjust margin to move image up
+                margin: const EdgeInsets.only(bottom: 1),
                 child: Image.asset(
                   product.imageUrl,
                   fit: BoxFit.cover,
@@ -185,7 +194,7 @@ class ProductItem extends StatelessWidget {
                 const SizedBox(height: 5),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.favorite,
                       size: 16,
                       color: Colors.red,

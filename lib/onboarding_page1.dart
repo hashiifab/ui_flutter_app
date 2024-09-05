@@ -36,9 +36,9 @@ class OnboardingPage1 extends StatelessWidget {
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
-                    mainAxisAlignment: MainAxisAlignment.start, // Align items to start
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 130), // Reduced spacing from image
+                      const SizedBox(height: 130),
                       const Text(
                         'Find Your Perfect Fit',
                         style: TextStyle(
@@ -61,7 +61,7 @@ class OnboardingPage1 extends StatelessWidget {
             ],
           ),
           Positioned(
-            top: 320, // Adjusted for better positioning of indicators
+            top: 320,
             left: 20,
             right: 20,
             child: Row(
