@@ -16,7 +16,17 @@ class MessagePage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Message")),
+      appBar: AppBar(
+          title: const Text(
+            "Message",
+            style: TextStyle(
+              fontWeight: FontWeight.bold, // Menebalkan teks
+              color: Colors.white, // Warna teks
+            ),
+          ),
+          backgroundColor: const Color.fromARGB(255, 104, 173, 229),
+          // Warna biru muda
+          iconTheme: IconThemeData(color: Colors.white)),
       body: ListView.builder(
         itemCount: messages.length, // Jumlah pesan berdasarkan daftar
         itemBuilder: (context, index) {
@@ -34,12 +44,12 @@ class MessagePage extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.2),
                     spreadRadius: 1,
                     blurRadius: 3,
-                    offset: Offset(0, 1), // Perubahan posisi bayangan
+                    offset: const Offset(0, 1), // Perubahan posisi bayangan
                   ),
                 ],
               ),
               child: ListTile(
-                leading: CircleAvatar(child: Icon(Icons.person)),
+                leading: const CircleAvatar(child: Icon(Icons.person)),
                 title: Text(messageData['name'] ?? ''),
                 subtitle: Text(messageData['message'] ?? ''),
               ),
