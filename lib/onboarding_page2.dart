@@ -37,7 +37,7 @@ class OnboardingPage2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center, 
                 children: [
                   const Text(
-                    'Shopping Efficiency',
+                    'Exclusive Collections',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class OnboardingPage2 extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'Enjoy the efficiency of your shopping experience with our app.',
+                    'Discover exclusive collections from top brands that you won’t find anywhere else.',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),

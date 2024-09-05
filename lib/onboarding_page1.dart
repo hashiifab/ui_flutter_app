@@ -37,7 +37,7 @@ class OnboardingPage1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center, 
                 children: [
                   const Text(
-                    'Best Products',
+                    'Find Your Perfect Fit',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class OnboardingPage1 extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'Get your favorite products here!',
+                    'Explore our wide range of stylish and comfortable shoes for every occasion.',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),

@@ -5,12 +5,63 @@ class ProductPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Daftar produk beserta gambar dan detail lainnya
     List<Map<String, String>> products = [
-      {"name": "Shoe 1", "desc": "Deskripsi Sepatu 1", "like": "120", "image": "assets/images/shoes-1.jpg"},
-      {"name": "Shoe 2", "desc": "Deskripsi Sepatu 2", "like": "95", "image": "assets/images/shoes-2.jpg"},
-      {"name": "Shoe 3", "desc": "Deskripsi Sepatu 3", "like": "140", "image": "assets/images/shoes-3.jpg"},
-      {"name": "Shoe 4", "desc": "Deskripsi Sepatu 4", "like": "85", "image": "assets/images/shoes-4.jpg"},
+      {
+        "name": "Shoe 1",
+        "desc":
+            "Timeless elegance with a contemporary edge, ideal for any occasion.",
+        "like": "120",
+        "image": "assets/images/shoes-1.jpg"
+      },
+      {
+        "name": "Shoe 2",
+        "desc":
+            "Sleek and sophisticated, blending style with comfort for versatile wear.",
+        "like": "95",
+        "image": "assets/images/shoes-2.jpg"
+      },
+      {
+        "name": "Shoe 3",
+        "desc":
+            "Ultimate comfort meets modern design, perfect for active lifestyles.",
+        "like": "140",
+        "image": "assets/images/shoes-3.jpg"
+      },
+      {
+        "name": "Shoe 4",
+        "desc":
+            "Refined and robust, crafted for those who appreciate durability and style.",
+        "like": "85",
+        "image": "assets/images/shoes-4.jpg"
+      },
+      {
+        "name": "Shoe 1",
+        "desc":
+            "Timeless elegance with a contemporary edge, ideal for any occasion.",
+        "like": "120",
+        "image": "assets/images/shoes-1.jpg"
+      },
+      {
+        "name": "Shoe 2",
+        "desc":
+            "Sleek and sophisticated, blending style with comfort for versatile wear.",
+        "like": "95",
+        "image": "assets/images/shoes-2.jpg"
+      },
+      {
+        "name": "Shoe 3",
+        "desc":
+            "Ultimate comfort meets modern design, perfect for active lifestyles.",
+        "like": "140",
+        "image": "assets/images/shoes-3.jpg"
+      },
+      {
+        "name": "Shoe 4",
+        "desc":
+            "Refined and robust, crafted for those who appreciate durability and style.",
+        "like": "85",
+        "image": "assets/images/shoes-4.jpg"
+      },
     ];
 
     return Scaffold(
@@ -36,9 +87,10 @@ class ProductPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: ClipRRect(
-                    borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+                    borderRadius:
+                        const BorderRadius.vertical(top: Radius.circular(15)),
                     child: Image.asset(
-                      products[index]['image']!, 
+                      products[index]['image']!,
                       fit: BoxFit.cover,
                     ),
                   ),

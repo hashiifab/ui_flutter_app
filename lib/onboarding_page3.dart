@@ -37,7 +37,7 @@ class OnboardingPage3 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Let\'s Get Started',
+                    "Let's Get Started",
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
