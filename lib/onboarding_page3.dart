@@ -16,7 +16,7 @@ class OnboardingPage3 extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              width: double.infinity, 
+              width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -33,11 +33,11 @@ class OnboardingPage3 extends StatelessWidget {
                 ],
               ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch, 
-                mainAxisAlignment: MainAxisAlignment.center, 
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    'Lets Get Started',
+                    'Let\'s Get Started',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -50,19 +50,24 @@ class OnboardingPage3 extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),
-                  const SizedBox(height: 20), 
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/product');
-                    },
-                    child: const Text('Product Page'),
-                  ),
-                  const SizedBox(height: 10), 
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/message');
-                    },
-                    child: const Text('Message Page'),
+                  const SizedBox(height: 20),
+                  // Menggunakan Row untuk menampilkan tombol secara horizontal
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Mengatur jarak antar tombol
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/product');
+                        },
+                        child: const Text('Product Page'),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/message');
+                        },
+                        child: const Text('Message Page'),
+                      ),
+                    ],
                   ),
                 ],
               ),
