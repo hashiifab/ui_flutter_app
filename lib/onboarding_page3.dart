@@ -87,14 +87,8 @@ class OnboardingPage3 extends StatelessWidget {
             left: 40,
             right: 40,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/onboarding2');
-                  },
-                  child: const Text('Back'),
-                ),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/product');
